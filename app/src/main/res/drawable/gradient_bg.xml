@@ -3,7 +3,11 @@
     <item>
         <shape android:layout_width="match_parent" android:layout_height="match_parent">
 
-            <gradient android:angle="90" android:endColor="#005C97" android:startColor="#363795" android:type="linear" />
+            <gradient
+                android:angle="90"
+                android:endColor="#090088"
+                android:startColor="#1261A0"
+                android:type="linear" />
 
         </shape>
     </item>

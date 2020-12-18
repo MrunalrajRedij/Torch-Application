@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Torch Application</string>
+    <string name="set_color_here">SET COLOR HERE</string>
 </resources>

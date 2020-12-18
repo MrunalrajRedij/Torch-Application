@@ -1,10 +1,9 @@
-package com.devbase.torchapplication;
+package com.devbase.Flashlight;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 
-import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +24,7 @@ public class ScreenColor extends AppCompatActivity {
         setContentView(R.layout.activity_screen_color);
 
         //Click sound
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.flash_click_1);
+        MediaPlayer clickSound = MediaPlayer.create(this,R.raw.flash_click_2);
 
 
         //Remove status bar
@@ -39,7 +38,7 @@ public class ScreenColor extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                mp.start();
+                clickSound.start();
                 openColorPicker();
             }
 
@@ -57,6 +56,8 @@ public class ScreenColor extends AppCompatActivity {
             public void onOk(AmbilWarnaDialog dialog, int color) {
                 mDefaultColor = color;
                 colorPickerLayout.setBackgroundColor(mDefaultColor);
+
+
             }
         });
 

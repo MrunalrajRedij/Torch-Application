@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.devbase.torchapplication">
+    package="com.devbase.Flashlight">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Flashlight"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TorchApplication">
-
-        <activity android:name=".settingsMenu">
-
-        </activity>
-        <activity android:name=".ScreenColor" />
+        <activity android:name="com.devbase.Flashlight.settingsMenu" />
+        <activity android:name="com.devbase.Flashlight.ScreenColor" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.devbase.Flashlight.MainActivity"
             android:theme="@style/splashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

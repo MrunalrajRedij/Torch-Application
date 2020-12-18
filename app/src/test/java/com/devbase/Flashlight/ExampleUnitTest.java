@@ -1,4 +1,4 @@
-package com.devbase.torchapplication;
+package com.devbase.Flashlight;
 
 import org.junit.Test;
 
