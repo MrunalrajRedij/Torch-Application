@@ -3,7 +3,7 @@
     package="com.devbase.Flashlight">
 
     <uses-permission android:name="android.permission.CAMERA" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-feature android:name="android.hardware.camera2" />
 
     <application
@@ -13,6 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TorchApplication">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7392847676747975~7320326904"/>
+
+
+
         <activity android:name="com.devbase.Flashlight.settingsMenu" />
         <activity android:name="com.devbase.Flashlight.ScreenColor" />
         <activity

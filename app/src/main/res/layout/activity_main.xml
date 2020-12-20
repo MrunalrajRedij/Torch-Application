@@ -8,6 +8,18 @@
     tools:context=".MainActivity">
 
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="391dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7392847676747975/5383610466"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <ImageButton
         android:id="@+id/torchButton"
         android:layout_width="160dp"
@@ -57,13 +69,13 @@
         android:layout_width="82dp"
         android:layout_height="57dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:background="@null"
         android:onClick="menu"
         android:src="@drawable/menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/adView"
+        tools:ignore="OnClick">
 
     </ImageButton>
 
