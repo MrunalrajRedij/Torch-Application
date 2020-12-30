@@ -24,7 +24,7 @@ public class ScreenColor extends AppCompatActivity {
         setContentView(R.layout.activity_screen_color);
 
         //Click sound
-        MediaPlayer clickSound = MediaPlayer.create(this,R.raw.flash_click_2);
+        final MediaPlayer clickSound = MediaPlayer.create(this,R.raw.flash_click_2);
 
 
         //Remove status bar

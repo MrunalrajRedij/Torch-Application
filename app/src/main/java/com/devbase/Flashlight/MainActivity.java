@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Click Sound
-        MediaPlayer ClickSound = MediaPlayer.create(this, R.raw.flash_click_2);
+        final MediaPlayer ClickSound = MediaPlayer.create(this, R.raw.flash_click_2);
 
 
         //Remove notification bar

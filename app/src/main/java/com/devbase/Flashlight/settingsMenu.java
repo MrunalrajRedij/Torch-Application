@@ -25,7 +25,7 @@ public class settingsMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_menu);
 
-        MediaPlayer clicksound = MediaPlayer.create(this, R.raw.flash_click_2);
+        final MediaPlayer clicksound = MediaPlayer.create(this, R.raw.flash_click_2);
 
         //Remove status bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
