@@ -1,3 +1,6 @@
+
+Note: Comments are not there in source code.
+
 # Torch-Application
 A simple android application that enables user to toggle on and off their flashlight.
 Also has strobe(blinking mode).
